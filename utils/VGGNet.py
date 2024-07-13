@@ -4,7 +4,7 @@
 from tensorflow import keras
 from keras import layers, models
 from keras.models import Model, Sequential
-from keras.layers import Flatten, Dense, Dropout
+from keras.layers import Flatten, Dense, Dropout, Input
 from keras.applications import VGG16  
 
 def VGG_base_nontrain():
@@ -26,8 +26,10 @@ def VGG_base_nontrain():
 
 # Using Sequential, builtin VGG16 in Keras 
 # and a fully connected layer
-def VGG(input_shape=(224,224,3)):
+def VGG():
+    input_shape=(224,224,3)
     model = models.Sequential([
+        Input(shape=input_shape),
         VGG16(weights='imagenet', include_top=False, input_shape=input_shape),
         Flatten(),
         Dense(256, activation='relu'),
