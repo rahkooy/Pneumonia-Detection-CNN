@@ -1,0 +1,9 @@
+TODO:
+    1-AlexNet needs early stopping at epoch 8
+    1-VGG to be deleted or kept?
+        -VGG built in needs early stoppping 
+           fixing confusion matrix
+        -VGG from Scratch model seems incorrect 
+        because val accuracy is always fix 
+    2-Inception may need a couple of more epochs
+    
