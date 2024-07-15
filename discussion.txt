@@ -1,4 +1,7 @@
 TODO:
+	---code representation: add hinter to functions,
+	refactor and flake8 library on vs code.
+	
     0-AlexNet needs early stopping at epoch 8?? How?
     1-VGG to be deleted or kept?
         -VGG built in needs early stoppping 
@@ -14,6 +17,8 @@ TODO:
     to learn
     4-New Model: early stopping
     
+    	-- change the order of models based on the accuracy?
+	---Readme: update
     
     
     
