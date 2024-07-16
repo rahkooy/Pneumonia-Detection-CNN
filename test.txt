@@ -1,7 +1,0 @@
-test file
-main file
-
-testing a bit
-
-.....
-
