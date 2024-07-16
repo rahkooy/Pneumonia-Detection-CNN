@@ -59,5 +59,5 @@ The `utils` directory includes Python files, each of which contains a CNN model 
 
 6. **Our Model**: 
    - Has very few layers of normalisation and dropout
-   - Shows competitive accuracy and loss as the best pretrained models
+   - Shows similar accuracy and loss as the best pre-trained models
    - 95% accuracy
