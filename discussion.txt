@@ -1,4 +1,7 @@
 TODO:
-    
-	---code representation: add hinter to functions,
-	refactor and flake8 library on vs code.
+
+	-- clean readme (e)
+	---code representation: add hinter to functions, (i)
+	        refactor and flake8 library on vs code.
+
+	-- deleting VGG and related files (i)
