@@ -57,7 +57,7 @@ The `utils` directory includes Python files, each of which contains a CNN model 
 5. **DenseNet**: 
    - 95% accuracy
 
-6. **Our Model**: 
+6. **New Model**: 
    - Has very few layers of normalisation and dropout
    - Shows similar accuracy and loss as the best pre-trained models
    - 95% accuracy
