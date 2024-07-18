@@ -1,7 +1,8 @@
 import tensorflow as tf
 from tensorflow.keras import layers, models
+from tensorflow.keras.models import Sequential
 
-def create_alexnet_model():
+def create_alexnet_model() -> Sequential:
     model = models.Sequential()
     model.add(layers.Input(shape=(32, 32, 3)))
     model.add(layers.Conv2D(64, (3, 3), strides=1, padding='same', activation='relu'))

@@ -8,7 +8,7 @@ from keras.models import Model, Sequential
 
 
 # Built-in base model nontrainable with several normalisation layers
-def resnet50_nontrain_normalised():
+def resnet50_nontrain_normalised() -> Sequential:
     base_model = ResNet50(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
     base_model.trainable = False 
     
@@ -32,7 +32,7 @@ def resnet50_nontrain_normalised():
     return model
 
 # Built-in base model nontrainable with only one added fully connected layer
-def resnet50_nontrain():
+def resnet50_nontrain() -> Sequential:
     base_model = ResNet50(weights='imagenet', include_top=False, 
                           input_shape=(224, 224, 3))
     base_model.trainable = False 
@@ -50,7 +50,7 @@ def resnet50_nontrain():
 
 
 # Using sequeltial to stack built-in ResNet50 on only one fully connected layer
-def resnet50_seq(input_shape=(224,224,3)):
+def resnet50_seq(input_shape=(224,224,3)) -> Sequential:
     resnet_model = Sequential([
         ResNet50(weights='imagenet', include_top=False, input_shape=input_shape),
         GlobalAveragePooling2D(),

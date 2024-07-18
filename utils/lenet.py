@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow.keras import layers, models
 
-def create_lenet_model():
+def create_lenet_model() -> Sequential:
     model = models.Sequential()
     model.add(layers.Input(shape=(32, 32, 3)))
     model.add(layers.Conv2D(6, (5, 5), activation='relu'))

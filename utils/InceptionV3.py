@@ -7,7 +7,7 @@ from keras.layers import Dense, GlobalAveragePooling2D
 from keras.models import Model, Sequential
 
 
-def Inception_V3(input_shape=(299,299,3)):
+def Inception_V3(input_shape=(299,299,3)) -> Sequential:
     model = Sequential([
     # Buil-In Inception in Keras
     InceptionV3(weights='imagenet', include_top=False, input_shape=input_shape),
@@ -23,7 +23,7 @@ def Inception_V3(input_shape=(299,299,3)):
 
 # Without using Sequential and 
 # Freezing pre-trained models via trainable = False
-def inception_V3():
+def inception_V3() -> Sequential:
     base_model = InceptionV3(weights='imagenet', include_top=False, input_shape=(299, 299, 3))
     base_model.trainable = False 
     

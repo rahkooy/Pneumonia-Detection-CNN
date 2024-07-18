@@ -7,7 +7,7 @@ from keras.models import Model, Sequential
 from keras.layers import Flatten, Dense, Dropout, Input
 from keras.applications import VGG16  
 
-def VGG_base_nontrain():
+def VGG_base_nontrain() -> Sequential:
     input_shape = (224, 224, 3)
     base_model = VGG16(weights='imagenet', include_top=False, input_shape=input_shape)
     base_model.trainable = False
@@ -26,7 +26,7 @@ def VGG_base_nontrain():
 
 # Using Sequential, builtin VGG16 in Keras 
 # and a fully connected layer
-def VGG():
+def VGG() -> Sequential:
     input_shape=(224,224,3)
     model = models.Sequential([
         Input(shape=input_shape),
@@ -45,7 +45,7 @@ from keras.models import Sequential
 from keras.layers import Dense, Conv2D, MaxPool2D , Flatten
 import numpy as np
 
-def VGG16_scratch():
+def VGG16_scratch() -> Sequential:
     model = Sequential()
     model.add(Conv2D(input_shape=(224,224,3),filters=64,kernel_size=(3,3),padding="same", activation="relu"))
     model.add(Conv2D(filters=64,kernel_size=(3,3),padding="same", activation="relu"))

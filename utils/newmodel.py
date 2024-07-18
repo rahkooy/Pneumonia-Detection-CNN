@@ -3,8 +3,7 @@
 from keras.models import Sequential
 from keras.layers import Dense,Conv2D, Input, Reshape, MaxPooling2D, Flatten, Dropout, BatchNormalization
 
-
-def newmodel(input_shape=(32,32,3)):
+def newmodel(input_shape: tuple = (32, 32, 3)) -> Sequential:
     model=Sequential()
     model.add(Input(shape=input_shape))
     model.add(Conv2D(32,kernel_size=(3,3),activation='relu'))
