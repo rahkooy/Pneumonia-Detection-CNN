@@ -31,7 +31,7 @@ The `utils` directory includes Python files, each of which contains a CNN model 
 
 ## Models Considered and Their Performance
 1. **Our Model**: 
-   - Has only seven layers, including two concolutional layers and two maxpooling layers with only ~300,000 parameters
+   - Has only seven layers, including two convolutional layers and two maxpooling layers with only ~300,000 parameters
    - Shows the best accuracy and loss, the same as ResNet with 130 million parameters and other large pre-trained models
    - 95% accuracy
 
